@@ -30,7 +30,7 @@ const Formulario = ({handleChange}) => {
       fontSize: 18,
       padding: 25,
     }
-    const modalStyle={width:300}
+    
 
     const useStyles = makeStyles({
         root: {
@@ -73,12 +73,7 @@ const Formulario = ({handleChange}) => {
       }
 
       //Consumo de la API
-      //Consumo de la API
-      //Consumo de la API
-      //Consumo de la API
-      //Consumo de la API
-      //Consumo de la API
-      //Consumo de la API
+      
 
       const instance = axios.create({
         baseURL: "https://apify.epayco.co/"
@@ -140,11 +135,11 @@ const Formulario = ({handleChange}) => {
     const [users, setUsers] = useState(null);
     const run = async (documento, props) => {
         const token = await login()
-        //console.log({token})
+       
         const campos = await consultarCampos(token)
-        //console.log({campos})
+        
         const facturas = await consultarFacturas(token, documento)
-        //console.log({facturas})
+        
         
         setUsers({campos, facturas})
         props.resetForm()
@@ -161,9 +156,7 @@ const Formulario = ({handleChange}) => {
 
     
     //Logica de modales
-    //Logica de modales
-    //Logica de modales
-    //Logica de modales
+   
 
     
     const modalHandler = () => {
@@ -257,10 +250,8 @@ const Formulario = ({handleChange}) => {
     }
 
     
-    //Modales con data!
-    //Modales con data!
-    //Modales con data!
-    //Modales con data!
+    //Modales con data
+    
 
         const [isModalVisible, setIsModalVisible] = useState(true);
 
