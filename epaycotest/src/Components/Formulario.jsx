@@ -133,6 +133,7 @@ const Formulario = ({handleChange}) => {
     }
 
     const [users, setUsers] = useState(null);
+
     const run = async (documento, props) => {
         const token = await login()
        
@@ -250,22 +251,7 @@ const Formulario = ({handleChange}) => {
     }
 
     
-    //Modales con data
-    
-
-        const [isModalVisible, setIsModalVisible] = useState(true);
-
-        const showModal = () => {
-          setIsModalVisible(true);
-        };
-
-        const handleOk = () => {
-          setIsModalVisible(false);
-        };
-
-        const handleCancel = () => {
-          setIsModalVisible(false);
-        };
+   
     
 
     
