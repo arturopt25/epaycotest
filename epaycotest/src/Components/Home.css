@@ -39,13 +39,28 @@ section .content {
 
 }
 
-section .content h2 {
+section .content h3 {
     margin: 0;
-    padding: 0;
-    color: #fff;
-    font-size: 1.5em;
+    position: fixed;
+    bottom: 40px;
+    color: #373B3C;
+    font-size: 1em;
 }
 
+section .content p {
+    position: fixed;
+    bottom: 5px;
+    right: 20px;
+    font-size: 80%;
+    
+
+    
+}
+
+section .content img{
+    height: 22px;
+    vertical-align: middle;
+}
 .custom-shape-divider-bottom-1630373554 {
     position: absolute;
     bottom: 0;
@@ -64,5 +79,16 @@ section .content h2 {
 
 .custom-shape-divider-bottom-1630373554 .shape-fill {
     fill: #FFFFFF;
+}
+
+
+section .centro {
+    min-height: 260px !important;
+}
+
+section .formulario {
+    position: relative;
+    z-index: 1;
+    
 }
 

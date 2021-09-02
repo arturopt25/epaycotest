@@ -1,13 +1,21 @@
 import React from 'react'
 import './Home.css'
+import SignInOutContainer from '../Containers';
+import logoepayco from '../assets/logoepayco.png'
 const Home = () => {
     return (
         <div>
             
             <section className="white">
+                <div className="centro">
+                <div className="formulario">
+                    <SignInOutContainer />
+                </div>
                 <div className="content">
-                    <h2>Los pagos son procesados de
-                    forma segura por ePayco</h2>
+                    <h3>Los pagos son procesados de
+                    forma segura por ePayco</h3>
+                    <p>Powered by <img src={logoepayco} alt="Logo" /> </p>
+                </div>
                 </div>
                 <div class="custom-shape-divider-bottom-1630373554">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
